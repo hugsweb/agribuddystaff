@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="false">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/half_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sideMenu"
+                android:background="@drawable/bt_transparent_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/ic_home"
+                    android:layout_width="@dimen/icon_weight"
+                    android:layout_height="@dimen/icon_weight" />
+
+
+                <TextView
+                    style="@style/PrimaryText"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:text="@string/menu_home"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sideMenu"
+                android:background="@drawable/bt_transparent_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/ic_selfie_check_in"
+                    android:layout_width="@dimen/icon_weight"
+                    android:layout_height="@dimen/icon_weight" />
+
+
+                <TextView
+                    style="@style/PrimaryText"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:text="@string/menu_check_in"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sideMenu"
+                android:background="@drawable/bt_transparent_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/ic_attendance"
+                    android:layout_width="@dimen/icon_weight"
+                    android:layout_height="@dimen/icon_weight" />
+
+
+                <TextView
+                    style="@style/PrimaryText"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:text="@string/menu_attendance"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sideMenu"
+                android:background="@drawable/bt_transparent_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/ic_account_balance"
+                    android:layout_width="@dimen/icon_weight"
+                    android:layout_height="@dimen/icon_weight" />
+
+                <TextView
+                    style="@style/PrimaryText"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:text="@string/menu_payslips"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sideMenu"
+                android:background="@drawable/bt_transparent_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/ic_assessment"
+                    android:layout_width="@dimen/icon_weight"
+                    android:layout_height="@dimen/icon_weight" />
+
+                <TextView
+                    style="@style/PrimaryText"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:text="@string/menu_leave_management"/>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:id="@+id/llLogout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sideMenu"
+                android:background="@drawable/bt_transparent_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/ic_logout"
+                    android:layout_width="@dimen/icon_weight"
+                    android:layout_height="@dimen/icon_weight" />
+
+                <TextView
+                    style="@style/PrimaryText"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:text="@string/menu_logout"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkin.CheckIn">
+
+    <include layout="@layout/appbar_layout" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/main_appbar_size"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="@dimen/half_margin"
+            android:text="Break Out: 12:00 PM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:padding="@dimen/main_margin"
+            android:layout_weight="1"
+            android:src="@drawable/ic_account_circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:weightSum="4"
+            android:padding="@dimen/half_margin"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCheckIn"
+                android:layout_weight="1"
+                android:src="@drawable/ic_access_time"
+                android:layout_width="@dimen/check_in_icon_size"
+                android:layout_height="@dimen/check_in_icon_size" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/ic_local_dining"
+                android:layout_width="@dimen/check_in_icon_size"
+                android:layout_height="@dimen/check_in_icon_size" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/ic_local_dining"
+                android:layout_width="@dimen/check_in_icon_size"
+                android:layout_height="@dimen/check_in_icon_size" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/ic_access_time"
+                android:layout_width="@dimen/check_in_icon_size"
+                android:layout_height="@dimen/check_in_icon_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/main_margin"
+    android:layout_marginTop="@dimen/half_margin"
+    android:padding="@dimen/main_margin">
+
+    <TextView
+        android:layout_marginTop="@dimen/half_margin"
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/textPrimary"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/half_margin"
+        android:textSize="18sp"/>
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="@dimen/main_margin"
+        android:layout_height="100dp" >
+
+        <Button
+            android:id="@+id/btNo"
+            android:layout_margin="@dimen/half_margin"
+            android:textColor="@android:color/white"
+            android:text="@string/dialog_bt_no"
+            android:layout_weight="1"
+            android:background="@drawable/round_button_red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btYes"
+            android:text="@string/dialog_bt_yes"
+            android:layout_margin="@dimen/half_margin"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button_green"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
