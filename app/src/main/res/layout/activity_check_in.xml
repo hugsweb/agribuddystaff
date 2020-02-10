@@ -1,67 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".checkin.CheckIn">
 
-    <include layout="@layout/appbar_layout" />
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        app:ckFacing="front"
+        app:ckFlash="off"
+        app:ckFocus="continuous"
+        app:ckJpegQuality="100"
+        app:ckMethod="standard"
+        app:ckPermissions="strict" />
+
 
     <LinearLayout
-        android:layout_marginTop="@dimen/main_appbar_size"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/appbar_layout" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:padding="@dimen/half_margin"
-            android:text="Break Out: 12:00 PM"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:padding="@dimen/main_margin"
-            android:layout_weight="1"
-            android:src="@drawable/ic_account_circle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:text="Break Out: 12:00 PM" />
 
         <LinearLayout
-            android:weightSum="4"
-            android:padding="@dimen/half_margin"
-            android:layout_gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvCountDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#40FFFFFF"
+                android:textSize="300dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:padding="@dimen/half_margin"
+            android:weightSum="4">
 
             <ImageView
                 android:id="@+id/ivCheckIn"
-                android:layout_weight="1"
-                android:src="@drawable/ic_access_time"
                 android:layout_width="@dimen/check_in_icon_size"
-                android:layout_height="@dimen/check_in_icon_size" />
+                android:layout_height="@dimen/check_in_icon_size"
+                android:layout_weight="1"
+                android:src="@drawable/ic_access_time" />
 
             <ImageView
-                android:layout_weight="1"
-                android:src="@drawable/ic_local_dining"
                 android:layout_width="@dimen/check_in_icon_size"
-                android:layout_height="@dimen/check_in_icon_size" />
+                android:layout_height="@dimen/check_in_icon_size"
+                android:layout_weight="1"
+                android:src="@drawable/ic_local_dining" />
 
             <ImageView
-                android:layout_weight="1"
-                android:src="@drawable/ic_local_dining"
                 android:layout_width="@dimen/check_in_icon_size"
-                android:layout_height="@dimen/check_in_icon_size" />
+                android:layout_height="@dimen/check_in_icon_size"
+                android:layout_weight="1"
+                android:src="@drawable/ic_local_dining" />
 
             <ImageView
-                android:layout_weight="1"
-                android:src="@drawable/ic_access_time"
                 android:layout_width="@dimen/check_in_icon_size"
-                android:layout_height="@dimen/check_in_icon_size" />
+                android:layout_height="@dimen/check_in_icon_size"
+                android:layout_weight="1"
+                android:src="@drawable/ic_access_time" />
 
 
         </LinearLayout>
 
     </LinearLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

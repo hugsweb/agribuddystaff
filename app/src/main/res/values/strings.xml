@@ -13,4 +13,14 @@
     <string name="menu_logout">Logout</string>
     <string name="dialog_bt_no">No</string>
     <string name="dialog_bt_yes">Yes</string>
+
+    <string name="message_access_location_denied">Oops! You denied application access GPS, can not use this function</string>
+    <string name="message_access_camera_or_storage_or_gps_denied">Oops! You denied application access camera, storage or GPS, You can not use this function</string>
+    <string name="message_access_camera_or_storage_denied">Oops! You denied application access camera or storage, You can not use this function</string>
+
+    <string name="dialog_message_error">Error occurred. Please try again.</string>
+    <string name="dialog_message_disconnect">Can\'t connect to internet. Please try again.</string>
+    <string name="dialog_message_empty_field">Please enter every field</string>
+    <string name="message_dont_have_access_permission">You don\'t have permission to access this feature</string>
+
 </resources>
